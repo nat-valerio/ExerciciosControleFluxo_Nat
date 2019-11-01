@@ -7,33 +7,19 @@
     <title>Exercício 2</title>
 </head>
 <body>
-        <!--<img src="img/baby.jpg" alt="Bebê" width="500px">
-        <img src="img/comlicenca.jpg" alt="Brother" width="500px">-->
-    
-        <?php
-            $ano = $_GET["anoAtual"];
-
-            if($ano < 2004){
-                echo "Ainda é um bebê $ano";
-            }
-            else{
-                echo "Já é mocinho $ano";
-            }
-        ?>
 
     <form action="exercicio2.php">
         <div>
         <?php
             $ano = $_GET["anoAtual"];
-            $img = $_POST["imagem"];
 
             if($ano < 2004){
                 echo "Ainda é um bebê $ano";
-                $img -> 'img.baby.jpg'; //é só colocar o <image> entre aspas: '<image>'
+                echo "<figure><img src='img/baby.jpg'></figure>";
             }
             else{
                 echo "Já é mocinho $ano";
-                $img -> 'comlicenca.jpg';
+                echo "<figure><img src='img/comlicenca.jpg'></figure>";
             }
         ?>
 
