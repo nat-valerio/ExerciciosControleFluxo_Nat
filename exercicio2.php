@@ -13,11 +13,11 @@
         <?php
             $ano = $_GET["anoAtual"];
 
-            if($ano < 2004){
+            if($ano > 2004){
                 echo "Ainda é um bebê $ano";
                 echo "<figure><img src='img/baby.jpg'></figure>";
             }
-            else{
+            elseif($ano < 2004){
                 echo "Já é mocinho $ano";
                 echo "<figure><img src='img/comlicenca.jpg'></figure>";
             }
